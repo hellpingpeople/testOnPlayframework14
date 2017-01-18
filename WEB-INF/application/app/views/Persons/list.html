@@ -1,0 +1,35 @@
+#{if personas}
+    <table>
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Отчество</th>
+                <th>Город</th>
+                <th>Подробнее</th>
+            </tr>
+        </thead>
+        <tbody>
+            #{list personas, as:'persona'}
+                <tr>
+                    <td>${persona.firstname}</td>
+                    <td>${persona.lastname}</td>
+                    <td>${persona.patronymic}</td>
+                    <td>${persona.city}</td>
+                    <td>
+                        <a href="@{show(persona.id)}">Посмотреть подробнее</a>
+                    </td>
+                </tr>
+            #{/list}
+        </tbody>
+    </table>
+    <p>
+        <a id="nextPage" href="${page+1}">Больше результатов</a>
+    </p>
+#{/if}
+
+#{else}
+    <p>
+        Ничего нет
+    </p>
+#{/else}      

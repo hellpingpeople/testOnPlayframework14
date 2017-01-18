@@ -1,0 +1,23 @@
+#{extends 'main.html' /}
+#{set title:'Settings' /}
+
+<h1>Измените пароль</h1>
+
+#{form @saveSettings()}
+    #{field 'connected.password'}
+        <p class="${field.errorClass}">
+            <strong>Пароль:</strong> <input type="password" firstname="password" size="16" value="${connected?.password}"> *
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+    #{field 'verifyPassword'}
+        <p class="${field.errorClass}">
+            <strong>Повторите пароль:</strong> <input type="password" firstname="${field.name}" size="16" value="${verifyPassword}"> *
+            <span class="error">${field.error}</span>
+        </p>
+    #{/field}
+    
+    <p class="buttons">
+        <input type="submit" value="Сохранить"> <a href="@{index()}">Отмена</a>
+    </p>
+#{/form}
