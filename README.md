@@ -19,7 +19,7 @@ https://www.playframework.com/documentation/1.4.x/home
 в данной СУБД нужно поправить файлы pg_hba.conf и postgresql.conf для работы по 127.0.0.1
 
 Название БД должно быть playdb (я так захотел), если не нравится поменять можно 
-вот здесь /WEB-INF/application/conf/application.conf строка № 73 db.url=jdbc:postgresql:playdb (на что-то своё).
+вот здесь: распаковываем ROOT.war(это просто zip-архив), находим там  /WEB-INF/application/conf/application.conf строка № 73 db.url=jdbc:postgresql:playdb (playdb на что-то своё).
 
 После это необходимо восстановить БД из файла: dataBasePostgresql.tar
 
