@@ -6,7 +6,7 @@ body {
     width: 690px;
     margin: 20px auto;
     font-family: Arial;
-    font-size: 90%;
+    font-size: 77%;
     color: rgb(54, 47, 45);
     background: #fff;
     -webkit-border-radius: 8px;
@@ -45,7 +45,6 @@ a {
 #header {
     height: 200px;
     position: relative;
-    background: #fff url(../images/hotel.jpg) 0px -90px no-repeat;
 }
 
 #header h1 {
@@ -135,7 +134,7 @@ form p.field {
 
 form strong {
     display: block;
-    width: 150px;
+    width: 165px;
     float: left;
     text-align: right;
     margin-right: 10px;

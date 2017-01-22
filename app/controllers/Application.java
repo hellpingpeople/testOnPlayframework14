@@ -61,6 +61,7 @@ public class Application extends Controller {
             session.put("user", user.username);
             flash.success("Добро пожаловать, " + user.name);
             Persons.index();
+            Autos.index();
         }
         // Oops
         flash.put("username", username);

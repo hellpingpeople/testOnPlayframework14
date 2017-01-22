@@ -1,7 +1,7 @@
 #{extends 'main.html' /}
 #{set title:persona.firstname /}
 
-<h1>Сведения о человеке</h1>
+<h1>Сведения о водителе</h1>
 
 #{form @book(persona.id)}
     <p>
@@ -23,7 +23,7 @@
         <strong>Страна:</strong> ${persona.country}
     </p>
     <p>
-        <strong>Состояние:</strong> ${persona.price}
+        <strong>Стоимость заказа:</strong> ${persona.price}
     </p>
     <p>
         <strong>Марка автомобиля:</strong> ${persona.auto.modelname}
@@ -35,6 +35,6 @@
         <strong>Количество автомобилей:</strong> ${persona.auto.cel}
     </p>
     <p class="buttons">
-        <a href="@{index()}">Back to search</a>
+        <a href="@{index()}">Назад к поиску</a>
     </p>
 #{/form}

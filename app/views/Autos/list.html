@@ -1,0 +1,37 @@
+#{if autos}
+<table>
+    <thead>
+    <tr>
+        <th>Марка, модель</th>
+        <th>Цвет</th>
+        <th>Дата регистрации</th>
+        <th>Кузов (кабина, прицеп) №</th>
+        <th>Номер регистрации</th>
+        <th>Об автомобиле</th>>
+    </tr>
+    </thead>
+    <tbody>
+        #{list autos, as:'auto'}
+        <tr>
+            <td>${auto.modelname}</td>
+            <td>${auto.color}</td>
+            <td>${auto.registerdate}</td>
+            <td>${auto.body}</td>
+            <td>${auto.cel}</td>
+            <td>
+                <a href="@{show(auto.id)}">Посмотреть подробнее</a>
+            </td>
+        </tr>
+        #{/list}
+    </tbody>
+</table>
+<p>
+    <a id="nextPage" href="${page+1}">Больше результатов</a>
+</p>
+#{/if}
+
+#{else}
+<p>
+    Ничего нет
+</p>
+#{/else}      

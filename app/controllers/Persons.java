@@ -43,11 +43,9 @@ public class Persons extends Application {
     }
 
     public static void book(Long id) {
-        Persona persona = Persona.findById(id);
-        Auto auto = Auto.findById(id);
-        render(persona);
-        render(auto);
-    }
+       Persona persona = Persona.findById(id);
+       render(persona);
+   }
 
 
 

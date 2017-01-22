@@ -1,0 +1,35 @@
+#{extends 'main.html' /}
+#{set title:auto.modelname /}
+
+<h1>Сведения об автомобиле</h1>
+
+#{form @book(auto.id)}
+<p>
+    <strong>Марка, модель:</strong> ${auto.modelname}
+</p>
+<p>
+    <strong>Цвет:</strong> ${auto.color}
+</p>
+<p>
+    <strong>Дата регистрации:</strong> ${auto.registerdate}
+</p>
+<p>
+    <strong>Кузов (кабина, прицеп) №:</strong> ${auto.body}
+</p>
+<p>
+    <strong>Номер регистрации:</strong> ${auto.registernumber}
+</p>
+<p>
+    <strong>Пассажировместимость:</strong> ${auto.passengercapacity}
+</p>
+<p>
+    <strong>Мощность:</strong> ${auto.power}
+</p>
+<p>
+    <strong>Количество в гараже:</strong> ${auto.cel}
+</p>
+
+<p class="buttons">
+    <a href="@{index()}">Назад к поиску</a>
+</p>
+#{/form}

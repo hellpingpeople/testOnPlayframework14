@@ -3,13 +3,12 @@
 # ~~~~
 
 GET     /                                       Application.index
-GET     /personas                                 Persons.index
-GET     /personas/list                            Persons.list
-GET     /autos/list                               Persons.autoList
-GET     /personas/{id}                            Persons.show
-GET     /personas/{id}/booking                    Persons.book
-POST    /personas/{id}/booking                    Persons.confirmBooking
-DELETE  /bookings/{id}                          Persons.cancelBooking
+GET     /personas                               Persons.index
+GET     /personas/list                          Persons.list
+GET     /autos                                  Autos.index
+GET     /autos/list                             Autos.list
+GET     /personas/{id}                          Persons.show
+GET     /autos/{id}                             Autos.show
 GET     /register                               Application.register
 POST    /register                               Application.saveUser
 GET     /settings                               Persons.settings

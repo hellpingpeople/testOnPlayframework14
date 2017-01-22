@@ -16,13 +16,15 @@
             <h1>тестовое задание для РТ</h1>
             #{if user?.id}
                 <div id="options">
-                    Connected as ${user.username}
+                   Вы вошли как ${user.username}
                     |
-                    <a href="@{Persons.index()}">Search</a>
+                    <a href="@{Persons.index()}">Поиск человека</a>
                     |
-                    <a href="@{Persons.settings()}">Settings</a>
+                    <a href="@{Autos.index()}">Список авто</a>
                     |
-                    <a href="@{Application.logout()}">Logout</a>
+                    <a href="@{Persons.settings()}">Настройки</a>
+                    |
+                    <a href="@{Application.logout()}">Выход</a>
                 </div>
             #{/if}
         </div>
