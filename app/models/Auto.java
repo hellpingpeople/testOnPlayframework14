@@ -9,10 +9,11 @@ import play.data.validation.MinSize;
 import play.data.validation.Required;
 import play.db.jpa.Model;
 
-import javax.persistence.*;
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.Set;
 
 @Entity
 public class Auto extends Model {
